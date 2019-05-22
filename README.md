@@ -1,10 +1,14 @@
-1. Globally install sass
+1. Install nodejs and npm package manager
+
+https://nodejs.org/en/download/
+
+2. Globally install sass
 
 ```
 npm install -g node-sass
 ```
 
-2. Create styles.scss file
+3. Create styles.scss file
 
 ```
 $padding: 6px;
@@ -26,7 +30,7 @@ nav {
 }
 ```
 
-3. Create tasks.json (Terminal > configure tasks > create tasks.json file from template > others)
+4. Create tasks.json (Terminal > configure tasks > create tasks.json file from template > others)
 
 ```
 // Sass configuration
@@ -45,9 +49,9 @@ nav {
 }
 ```
 
-4. Run build task (Ctrl+Shift+B), should create styles.css
+5. Run build task (Ctrl+Shift+B), should create styles.css
 
-5. For automation, install gulp
+6. For automation, install gulp
 
 ```
 npm install -g gulp
@@ -57,7 +61,7 @@ gulp -v
 
 Should see version for both global (CLI) and local
 
-6. Create gulpfile.js at root
+7. Create gulpfile.js at root
 
 ```
 // Sass configuration
@@ -79,6 +83,6 @@ gulp.task('default', gulp.series('sass', function(cb) {
 }));
 ```
 
-7. Delete tasks.json or empty, Run Task and pick gulp:default
+8. Delete tasks.json or empty, Run Task and pick gulp:default
 
-8. Finally, terminate from global Terminal menu
+9. Finally, terminate from global Terminal menu
